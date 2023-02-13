@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food idea!</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <div class="main_container">
+        <div class="main_container_input">
+            <form>
+                <input type="text" name="ingredient" id="ingridient" placeholder="Type ingridient..." autofocus autocomplete="off"><br>
+                <input type="submit" value="Search" id="search">
+            </form>
+            <p id="error_message">There is no meal with entered ingridient</p>
+        </div>
+        <div class="main_container_food_list">
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal_content">
+            <span class="modal_close">&times;</span>
+            <div class="modal_header"></div>
+            <div class="modal_photo"></div>
+            <div class="modal_desc"></div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

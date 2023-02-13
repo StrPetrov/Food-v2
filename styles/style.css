@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Raleway;
+}
+
+.main_container {
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main_container .main_container_input {
+  width: 100%;
+  height: auto;
+  background-color: rgb(243, 241, 241);
+}
+.main_container .main_container_input form {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main_container .main_container_input form #ingridient {
+  display: block;
+  width: 100%;
+  height: 80px;
+  border-radius: 50px;
+  border: 1px solid grey;
+  text-align: center;
+  font-size: 35px;
+  color: grey;
+}
+.main_container .main_container_input form #ingridient::-moz-placeholder {
+  color: rgba(128, 128, 128, 0.4);
+}
+.main_container .main_container_input form #ingridient::placeholder {
+  color: rgba(128, 128, 128, 0.4);
+}
+.main_container .main_container_input form #search {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  height: 80px;
+  border-radius: 50px;
+  border: 1px solid grey;
+  text-align: center;
+  font-size: 35px;
+  color: grey;
+  background-color: white;
+  cursor: pointer;
+}
+.main_container .main_container_input form #search:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+  transition: 0.5s ease-out;
+}
+.main_container .main_container_input form #tryAgain {
+  display: block;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 80px;
+  border-radius: 50px;
+  border: 1px solid grey;
+  text-align: center;
+  font-size: 35px;
+  color: grey;
+  background-color: white;
+  cursor: pointer;
+}
+.main_container .main_container_input form #tryAgain:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+  transition: 0.5s ease-out;
+}
+.main_container .main_container_input #error_message {
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 30px;
+  color: rgb(241, 67, 67);
+  visibility: hidden;
+}
+.main_container .main_container_food_list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.main_container .main_container_food_list .card {
+  flex-basis: 33.333%;
+}
+.main_container .main_container_food_list .card img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 20px;
+}
+.main_container .main_container_food_list .card p {
+  text-align: center;
+  font-size: 30px;
+}
+.main_container .main_container_food_list .card button {
+  text-align: center;
+  display: block;
+  border: none;
+  border-radius: 10px;
+  font-size: 19px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  height: 50px;
+  background-color: rgb(108, 108, 232);
+  color: white;
+  cursor: pointer;
+}
+.main_container .main_container_food_list .card button:hover {
+  background-color: rgb(78, 78, 182);
+  transition: 0.5s ease-out;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal .modal_content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 75%;
+  height: auto;
+}
+.modal .modal_content .modal_close {
+  color: #aaa;
+  float: right;
+  margin-top: -30px;
+  font-size: 70px;
+  font-weight: bold;
+}
+.modal .modal_content .modal_close:hover, .modal .modal_content .modal_close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .modal_content .modal_header {
+  height: auto;
+  background-color: white;
+}
+.modal .modal_content .modal_header h1 {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(135, 132, 132);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.modal .modal_content .modal_header h3 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(106, 145, 236);
+}
+.modal .modal_content .modal_desc {
+  height: auto;
+  background-color: white;
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgb(135, 132, 132);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.modal .modal_content .modal_photo {
+  height: auto;
+  background-color: white;
+  margin-top: 30px;
+}
+.modal .modal_content .modal_photo img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */
